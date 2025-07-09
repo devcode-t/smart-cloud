@@ -245,7 +245,7 @@ nohup java -jar -Xmx500m -Xms500m -Xmn180m -Xss1024k smart-system-3.1.0-SNAPSHOT
 mvn install:install-file -Dfile=D:\JNPF\jnpf_java\code-java\back-end\smart-java-cloud\lib\aliyun-sdk-oss-3.13.2.jar -DgroupId=com.aliyun.oss -DartifactId=aliyun-sdk-oss -Dversion=3.13.2 -Dpackaging=jar
 
 #### deploy to nexus
-test
+
 mvn deploy:deploy-file -DgroupId=com.microsoft.sqlserver -DartifactId=sqljdbc4 -Dversion=4.0 -Dpackaging=jar -Dfile=D:\repository\com\sqlserver\sqljdbc4\4.0\sqljdbc4-4.0.jar -Durl=http://39.101.66.185:8899/repository/maven-snapshots/ -DrepositoryId=maven-snapshots/
 
 mvn deploy:deploy-file -DgroupId=com.smart -DartifactId=smart-visualdev-base -Dversion=3.1.0-SNAPSHOT -Dpackaging=jar -Dfile=D:\repository_jnpf\com\smart\smart-visualdev-base-api\3.1.0-SNAPSHOT\smart-visualdev-base-api-3.1.0-SNAPSHOT.jar -Durl=http://39.101.66.185:8899/repository/maven-snapshots/ -DrepositoryId=maven-snapshots
